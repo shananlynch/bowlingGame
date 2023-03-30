@@ -5,11 +5,10 @@ class Program
 {
     static void Main(string[] args)
     {
-        var services = new ServiceCollection();
-        services.ConfigureServices();
+        var serviceProvider = new ServiceCollection().ConfigureServices().BuildServiceProvider();
 
-        IGame bowlingGame = new BowlingGame();
-        bowlingGame.Start();
+        var game = serviceProvider.GetService<IGame>();
+        game!.Start();
 
         Console.WriteLine("Game Over");
         Console.ReadLine();
