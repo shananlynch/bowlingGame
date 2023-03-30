@@ -22,7 +22,7 @@ namespace BowlingTests.FrameTests
 
             frame.AddThrow(10);
 
-            _console.Received().WriteLine("X");
+            frame.ThrowsAsString.Should().Be("X - ");
             frame.GetFrameType().Should().Be(FrameType.Strike);
             frame.GetThrows().First().Should().Be(10);
         }
@@ -34,7 +34,7 @@ namespace BowlingTests.FrameTests
 
             frame.AddThrow(6);
 
-            _console.Received().WriteLine("6");
+            frame.ThrowsAsString.Should().Be("6 ");
             frame.GetFrameType().Should().Be(FrameType.Regular);
             frame.GetThrows().First().Should().Be(6);
         }
@@ -47,7 +47,7 @@ namespace BowlingTests.FrameTests
 
             frame.AddThrow(5);
 
-            _console.Received().WriteLine("/");
+            frame.ThrowsAsString.Should().Be("5 / ");
             frame.GetFrameType().Should().Be(FrameType.Spare);
             frame.GetThrows().First().Should().Be(5);
             frame.GetScore().Should().Be(10);
@@ -62,7 +62,7 @@ namespace BowlingTests.FrameTests
             frame.ReadAndAdd("first");
 
 
-            _console.Received().WriteLine("6");
+            frame.ThrowsAsString.Should().Be("6 ");
             frame.GetFrameType().Should().Be(FrameType.Regular);
             frame.GetThrows().First().Should().Be(6);
         }
@@ -76,7 +76,7 @@ namespace BowlingTests.FrameTests
             frame.ReadAndAdd("first");
 
             _console.Received().WriteLine("Please enter a number between 0 - 10");
-            _console.Received().WriteLine("6");
+            frame.ThrowsAsString.Should().Be("6 ");
             frame.GetFrameType().Should().Be(FrameType.Regular);
             frame.GetThrows().First().Should().Be(6);
         }
@@ -91,7 +91,7 @@ namespace BowlingTests.FrameTests
             frame.ReadAndAdd("second");
 
             _console.Received().WriteLine("Please enter a number between 0 - 5");
-            _console.Received().WriteLine("5");
+            frame.ThrowsAsString.Should().Be("5 / ");
             frame.GetFrameType().Should().Be(FrameType.Spare);
             frame.GetThrows().First().Should().Be(5);
         }
@@ -105,7 +105,7 @@ namespace BowlingTests.FrameTests
             frame.ReadAndAdd("first");
 
             _console.Received().WriteLine("Please enter a number between 0 - 10");
-            _console.Received().WriteLine("5");
+            frame.ThrowsAsString.Should().Be("5 ");
             frame.GetFrameType().Should().Be(FrameType.Regular);
             frame.GetThrows().First().Should().Be(5);
         }

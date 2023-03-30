@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QsRo7JO+YvK35V47kOMtQ1MaC3yAZBFouVYbISTOcRrnHc1+8TE61a+20Pshc+cJHhQ1zPr3L6uuKoqhmoOKsg==",
+  "dgSpecHash": "dNdOo4jCGrLtid5LDpPokWFay44325mMYXMLQtaZKNaSAqlmf7CvlnYOs0uV+y2YcJl94P8tLGNzzSaZC7VibA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\shana\\source\\repos\\BowlingShananLynch\\ConsoleApp1\\Bowling.csproj",
+  "projectFilePath": "C:\\Users\\shana\\source\\repos\\bowlingGame\\ConsoleApp1\\Bowling.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\shana\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
     "C:\\Users\\shana\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"

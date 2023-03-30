@@ -11,7 +11,10 @@ namespace Bowling.Frames
 
         public bool IsLast { get; }
 
-        public Frame(IConsole console, bool isLast = false)
+        public int FrameTotal { get; set; } = 0;
+        public string ThrowsAsString { get ; set ; } = string.Empty;
+
+        public Frame(IConsole console, bool isLast = false) 
         {
             _console = console;
             IsLast = isLast;
@@ -23,22 +26,29 @@ namespace Bowling.Frames
             if (value == 10)
             {
                 FrameType = FrameType.Strike;
-                _console.WriteLine("X");
+                if (IsLast)
+                {
+                    ThrowsAsString += "X ";
+                }
+                else
+                {
+                    ThrowsAsString += "X - ";
+                }
             }
             else if (_throws.Count == 2 && _throws.Sum() == 10) 
             {
                 FrameType = FrameType.Spare;
-                _console.WriteLine("/");
+                ThrowsAsString += "/ ";
             }
             else 
             {
-                _console.WriteLine(value.ToString());
+                ThrowsAsString += $"{value} ";
             }
         }
 
         public int GetScore()
         {
-            return _throws.Sum();
+            return _throws.Count > 1 ? _throws.First() + _throws[1] : _throws.First();
         }
 
         public IList<int> GetThrows()

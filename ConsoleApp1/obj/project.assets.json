@@ -110,11 +110,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\shana\\source\\repos\\BowlingShananLynch\\ConsoleApp1\\Bowling.csproj",
+      "projectUniqueName": "C:\\Users\\shana\\source\\repos\\bowlingGame\\ConsoleApp1\\Bowling.csproj",
       "projectName": "Bowling",
-      "projectPath": "C:\\Users\\shana\\source\\repos\\BowlingShananLynch\\ConsoleApp1\\Bowling.csproj",
+      "projectPath": "C:\\Users\\shana\\source\\repos\\bowlingGame\\ConsoleApp1\\Bowling.csproj",
       "packagesPath": "C:\\Users\\shana\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\shana\\source\\repos\\BowlingShananLynch\\ConsoleApp1\\obj\\",
+      "outputPath": "C:\\Users\\shana\\source\\repos\\bowlingGame\\ConsoleApp1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\shana\\AppData\\Roaming\\NuGet\\NuGet.Config",

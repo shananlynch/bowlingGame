@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\shana\\source\\repos\\BowlingShananLynch\\BowlingTests\\BowlingTests.csproj": {}
+    "C:\\Users\\shana\\source\\repos\\bowlingGame\\BowlingTests\\BowlingTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\shana\\source\\repos\\BowlingShananLynch\\BowlingTests\\BowlingTests.csproj": {
+    "C:\\Users\\shana\\source\\repos\\bowlingGame\\BowlingTests\\BowlingTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\shana\\source\\repos\\BowlingShananLynch\\BowlingTests\\BowlingTests.csproj",
+        "projectUniqueName": "C:\\Users\\shana\\source\\repos\\bowlingGame\\BowlingTests\\BowlingTests.csproj",
         "projectName": "BowlingTests",
-        "projectPath": "C:\\Users\\shana\\source\\repos\\BowlingShananLynch\\BowlingTests\\BowlingTests.csproj",
+        "projectPath": "C:\\Users\\shana\\source\\repos\\bowlingGame\\BowlingTests\\BowlingTests.csproj",
         "packagesPath": "C:\\Users\\shana\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\shana\\source\\repos\\BowlingShananLynch\\BowlingTests\\obj\\",
+        "outputPath": "C:\\Users\\shana\\source\\repos\\bowlingGame\\BowlingTests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\shana\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\shana\\source\\repos\\BowlingShananLynch\\ConsoleApp1\\Bowling.csproj": {
-                "projectPath": "C:\\Users\\shana\\source\\repos\\BowlingShananLynch\\ConsoleApp1\\Bowling.csproj"
+              "C:\\Users\\shana\\source\\repos\\bowlingGame\\ConsoleApp1\\Bowling.csproj": {
+                "projectPath": "C:\\Users\\shana\\source\\repos\\bowlingGame\\ConsoleApp1\\Bowling.csproj"
               }
             }
           }
@@ -87,14 +87,14 @@
         }
       }
     },
-    "C:\\Users\\shana\\source\\repos\\BowlingShananLynch\\ConsoleApp1\\Bowling.csproj": {
+    "C:\\Users\\shana\\source\\repos\\bowlingGame\\ConsoleApp1\\Bowling.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\shana\\source\\repos\\BowlingShananLynch\\ConsoleApp1\\Bowling.csproj",
+        "projectUniqueName": "C:\\Users\\shana\\source\\repos\\bowlingGame\\ConsoleApp1\\Bowling.csproj",
         "projectName": "Bowling",
-        "projectPath": "C:\\Users\\shana\\source\\repos\\BowlingShananLynch\\ConsoleApp1\\Bowling.csproj",
+        "projectPath": "C:\\Users\\shana\\source\\repos\\bowlingGame\\ConsoleApp1\\Bowling.csproj",
         "packagesPath": "C:\\Users\\shana\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\shana\\source\\repos\\BowlingShananLynch\\ConsoleApp1\\obj\\",
+        "outputPath": "C:\\Users\\shana\\source\\repos\\bowlingGame\\ConsoleApp1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\shana\\AppData\\Roaming\\NuGet\\NuGet.Config",
