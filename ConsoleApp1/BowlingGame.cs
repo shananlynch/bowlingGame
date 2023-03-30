@@ -5,15 +5,22 @@ namespace Bowling
 {
     public class BowlingGame : IGame
     {
-        private readonly IList<IFrame> frames = new List<IFrame>();
-        private readonly IBowlingScoreboard scoreboard = new BowlingScoreboard();
-        private readonly IConsole _console = new ConsoleWrapper();
+        private IList<IFrame> frames = new List<IFrame>();
+        private readonly IBowlingScoreboard _scoreboard;
+        private readonly IConsole _console;
+        private readonly int _rounds = 10;
+
+        public BowlingGame(IBowlingScoreboard scoreboard, IConsole console)
+        {
+            _scoreboard = scoreboard;
+            _console = console;
+        }
 
         public void Start()
         {
-            for (int round = 1; round <= 10; round++)
+            for (int round = 1; round <= _rounds; round++)
             {
-                var frame = round == 10 ? new Frame(_console, true) : new Frame(_console);
+                var frame = round == _rounds ? new Frame(_console, true) : new Frame(_console);
                 frame.ReadAndAdd("first");
 
                 if (frame.GetFrameType() != FrameType.Strike || frame.IsLast)
@@ -27,7 +34,8 @@ namespace Bowling
                 }
 
                 frames.Add(frame);
-                Console.WriteLine($"Score after frame {round}: {scoreboard.Calculate(frames)}");
+                frames = _scoreboard.GetRecalculatedFrames(frames);
+                _scoreboard.PrintScoreboard(frames, _rounds, _console);
             }
         }
     }

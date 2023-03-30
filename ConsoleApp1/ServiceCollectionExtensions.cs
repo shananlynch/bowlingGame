@@ -1,5 +1,4 @@
-﻿using Bowling.Frames;
-using Bowling.UserInterface;
+﻿using Bowling.UserInterface;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Bowling
@@ -8,8 +7,9 @@ namespace Bowling
     {
         public static IServiceCollection ConfigureServices(this IServiceCollection services)
         {
-            services.AddScoped<IFrame, Frame>();
             services.AddScoped<IConsole, ConsoleWrapper>();
+            services.AddScoped<IBowlingScoreboard, BowlingScoreboard>();
+            services.AddScoped<IGame, BowlingGame>();
 
             return services;
         }
